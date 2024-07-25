@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+  <div class="wrapper">
     <h1>Bicycles</h1>
     <label for="bikes">Choose a bike:</label>
-    <select name="bikes" id="bikes">
+    <select name="bikes" id="bikes" onchange="bicycleSelection()">
+      <option value="">Select bicycle:</option>
       <option id="trek" value="Trek 7.2fx">Trek 7.2fx</option>
       <option id="fatboy" value="Specialized Fatboy">Specialized Fatboy</option>
       <option id="stumpjumper" value="Specialized Stumpjumper">Specialized Stumpjumper</option>
       <option id="como" value="Specialized Como">Specialized Como</option>
       <option id="electra" value="Electra Townie">Electra Townie</option>
-    </select> 
+    </select>
+    <div id="bicycle-info"></div>
+  </div>
     <script src="script/script.js"></script>
 </body>
 </html>
