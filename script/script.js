@@ -1,13 +1,28 @@
 const bicycleInfo = document.getElementById("bicycle-info");
+const bikeSelect = document.getElementById("bike-select");
 
-function bicycleSelection()
+bikeSelect.addEventListener("change", bikeSelection)
+
+function bikeSelection(event)
 {
-    let bicycle = document.getElementById("bikes").value;
-    displayInfo(bicycle);
+    let bicycle = event.target.value;
+    let bicycleSelected;
+
+    if (bicycle == "trek") {
+        bicycleSelected = trek;
+    } else if (bicycle == "stumpjumper") {
+        bicycleSelected = stumpjumper;
+    }
+
+    displayInfo(bicycleSelected);
 }
 
-const trek = 
+function displayInfo(bicycleSelected)
 {
+    bicycleInfo.innerHTML = `<p>${bicycleSelected.name}</p>`;
+}
+
+const trek = {
     name: "Trek 7.2fx",
     type: "Hybrid",
     color: "Black",
@@ -15,8 +30,10 @@ const trek =
     fork: "High-tensile steel w/lowrider mounts, CLIX dropouts"
 }
 
-
-function displayInfo()
+const stumpjumper = 
 {
-    bicycleInfo.innerHTML = `<p>${trek.name}</p>`
+    name: "Specialized S-Works Stumpjumper",
+    type: "Mountain Bike",
+    color: "Black",
+    manual: "https://media.specialized.com/support/collateral/Specialized_Owners_Manual_World.pdf"
 }
