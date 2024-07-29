@@ -9,9 +9,10 @@ body {
     margin: auto;
     color: #e8e9f3;
     max-width: 800px;
+    padding: 20px;
 }
 
-h1 {
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -19,3 +20,17 @@ select {
     text-align: center;
 }
 
+table {
+    border: 2px solid black;
+    margin: auto;
+    padding: 10px;
+}
+
+th {
+    color: black;
+}
+
+.part-name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
