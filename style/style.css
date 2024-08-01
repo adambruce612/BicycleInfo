@@ -43,7 +43,7 @@ tr {
     font-weight: bold;
 }
 
-#stumpjumper {
+.hidden {
     display: none;
 }
 

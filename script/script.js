@@ -1,9 +1,9 @@
 const bicycleInfo = document.getElementById("bicycle-info");
 const bikeSelect = document.getElementById("bike-select");
 const trek = document.getElementById("trek");
+const stumpjumper = document.getElementById("stumpjumper");
 
-console.log(trek);
-
+let activeSelection;
 
 bikeSelect.addEventListener("change", bikeSelection)
 
@@ -13,9 +13,9 @@ function bikeSelection(event)
     let bicycleSelected;
 
     if (bicycle == "trek") {
-        trek.className = "visible";
+        trek.classList.remove("hidden");
     } else if (bicycle == "stumpjumper") {
-        bicycleSelected = stumpjumper;
+        stumpjumper.classList.remove("hidden");
     }
 }
 
