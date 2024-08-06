@@ -1,14 +1,16 @@
 /* coolors: https://coolors.co/e8e9f3-cecece-a6a6a8-272635-b1e5f2 */
 
-body {
+html, body {
+    margin: 0;
+    padding: 0;
     background-color: #272635;
 }
 
 .wrapper {
-    background-color: #a6a6a8;
     margin: auto;
     color: #e8e9f3;
     max-width: 450px;
+    margin: 30px auto;
 }
 
 select {
@@ -24,18 +26,14 @@ select {
     text-align: center;
 }
 
-table {
+.bicycle-info {
     margin: auto;
-    background-color: #e8e9f3;
-    color: #272635;
+    color: #e8e9f3;
 }
 
 th {
-    color: black;
-}
-
-tr {
-    border-bottom: 1px solid black;
+    color: #a6a6a8;
+    text-transform: uppercase;
 }
 
 .part-name {
@@ -53,9 +51,5 @@ tr {
         max-width: 800px;
     }
 
-    table {
-        border: 2px solid black;
-        padding: 2s0px;
-    }
     
 }
