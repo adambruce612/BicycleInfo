@@ -1,6 +1,6 @@
 /* coolors: https://coolors.co/e8e9f3-cecece-a6a6a8-272635-b1e5f2 */
-
 html, body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #272635;
@@ -34,6 +34,10 @@ select {
 th {
     color: #a6a6a8;
     text-transform: uppercase;
+}
+
+tr {
+    padding: 15px;
 }
 
 .part-name {
